@@ -6,7 +6,7 @@ public class SandwichShop {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // stablishing sandwich size
+        // establishing sandwich size
         double sandwichPrice = 0.00;
         System.out.print("What sandwich size do you want? (1 or 2)\n" +
                 "1: Regular: base price $5.45\n" +
@@ -14,7 +14,7 @@ public class SandwichShop {
         int sandwichSize = scanner.nextInt();
         scanner.nextLine();
 
-        // stablishing sandwich price
+        // establishing sandwich price
         if (sandwichSize == 1) {
             sandwichPrice = 5.45;
         } else if (sandwichSize == 2) {
@@ -24,7 +24,7 @@ public class SandwichShop {
             return;
         }
 
-        // stablishing if sandwich is loaded
+        // establishing if sandwich is loaded
         boolean loaded = false;
         double loadedPrice = 0;
         System.out.println("Would you like your sandwich loaded? (Y/N");
@@ -38,7 +38,7 @@ public class SandwichShop {
             return;
         }
 
-        // stablishing loaded price
+        // establishing loaded price
         if (loaded) {
             if (sandwichSize == 1) {
                 loadedPrice = 1.00;
@@ -47,7 +47,7 @@ public class SandwichShop {
             }
         }
 
-        // stablishing age
+        // establishing age
         System.out.println("How old are you?");
         int age = scanner.nextInt();
 
